@@ -1,44 +1,48 @@
 import React from 'react';
 import './App.css';
 import CottageCloudClip from "./components/CottageCloudClip.js";
+import CVGSClip from './components/CVGSClip';
+import Resume from './resources/resume.pdf';
+import Profile from './resources/profile.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <table style={{ width: "100%" }}>
-          <tr>
-            <td id="header-left">
-              <h3>Jakob Chisholm</h3>
-            </td>
-            <td id="header-right">
-              <ul id="nav-menu">
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#projects">Projects</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
+        <div id="header">
+          <h1>Jakob Chisholm</h1>
+          <p id="links">
+            <a href="https://www.linkedin.com/in/jakobchisholm">Linkedin</a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/jakobchis">Github</a>
+            &nbsp;&nbsp;
+            <a href={Resume}>Resume</a>
+            &nbsp;&nbsp;
+            <a href="mailto:jakobchis@gmail.com">Email</a>
+          </p>
+        </div>
       </header>
 
-      <div id="projects" className="App-body">
+      <body className="App-body">
         <div id="about" className="body-div">
-          <p>about me goess here</p>
+          <h1>About Me</h1>
+          <img src={Profile}></img>
+          <p>Hi, I'm Jakob. I'm a full stack developer in the Guelph/KW area and a recent Conestoga College grad. I'm passionate about software, love experimentation, and love learning.</p>
         </div>
+
         <div id="projects" className="body-div">
-          <CottageCloudClip />
-        </div>
-        <div id="contact" className="body-div">
-          contact info and link to resume download goes here
+          <h1>Projects</h1>
+          <div className="project-div">
+            <CottageCloudClip />
           </div>
-      </div>
+          <div className="project-div">
+            <CVGSClip />
+          </div>
+        </div>
+      </body>
+      <footer className="App-footer">
+        Copyright &copy; Jakob Chisholm 2020
+      </footer>
     </div>
   );
 }
