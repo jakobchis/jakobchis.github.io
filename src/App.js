@@ -23,7 +23,7 @@ function App() {
         </div>
       </header>
 
-      <body className="App-body">
+      <div className="App-body">
         <div id="about" className="body-div">
           <h1>About Me</h1>
           <img src={Profile}></img>
@@ -39,7 +39,7 @@ function App() {
             <CVGSClip />
           </div>
         </div>
-      </body>
+      </div>
       <footer className="App-footer">
         Copyright &copy; Jakob Chisholm 2020
       </footer>
