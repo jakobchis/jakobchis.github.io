@@ -3,7 +3,7 @@ import './App.css';
 import CottageCloudClip from "./components/CottageCloudClip.js";
 import CVGSClip from './components/CVGSClip';
 import Resume from './resources/resume.pdf';
-import Profile from './resources/profile.png';
+import Profile from './resources/profile.jpg';
 
 function App() {
   return (

@@ -7,9 +7,8 @@ class CottageCloudClip extends Component {
     return (
       <div>
         <h2>Property Rental Platform Project</h2>
-        <video autoPlay={true}
-        loop={true} src={cottagecloudclip} controls />
-        <p>REST API and React web front-end for viewing
+        <video src={cottagecloudclip} autoPlay loop controls />
+        <p>REST API and web front-end for viewing
         and renting vacation properties. Cooperative semester-long
         project with two other team members.</p>
         <p className="bold">Stack: React + React-Admin, Node.js +
